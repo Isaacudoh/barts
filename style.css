@@ -1,116 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
 *{
     margin: 0;
     padding: 0;
+    /* do not need, for now!
+        font-family: sans-serif;
+    */
 }
 
-header{
-    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/hero.jpg);
-    
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    
+nav{
+    padding: 0px 100px;
+    color: white;
+    box-sizing: border-box;
+    transition: .5s;
 }
 
-.main-nav{
+nav ul{
     float: right;
-    list-style: none;
-    margin-top: 30px;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-.main-nav li{
-    display: inline-block;
-}
-
-.main-nav li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px;
-    font-family: "roboto", sans-serif;
+nav ul li{
     font-size: 20px;
+    list-style: none;
+    letter-spacing: 2px
 }
 
-.main-nav li.active a{
-    border: 1px solid wheat;
-}
-
-.main-nav li a:hover{
-    border: 1px solid wheat;
-}
-
-.logo {
-    width: 287px;
-    height: auto;
+nav ul li a {
+    list-style: none;
     color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    line-height: 80px;
+    font-family: 'Roboto', sans-serif;
+    transition: .5s;
 }
 
-.hero1{
-    position: absolute;
-    width: 1200px;
-    margin-top: 0px;
-    margin-left: 0px;
+nav ul li a:hover{
+    color: burlywood
 }
 
-h1{
+.hero{
+    background-image: url(img/hero.jpg);
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 65vh;
+    text-align: center;
     color: white;
+    padding: 550px 200px 0 0;
+}
+
+.hero h1{
     font-size: 90px;
     text-transform: uppercase;
-    text-align: center;
-    margin-top: 400px;
-    letter-spacing: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
-p{
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 4px; 
-    letter-spacing: 5px;
+.hero p{
+    font-size: 25px;
+    letter-spacing: 3px;
+    padding-bottom: 40px;
 }
 
-.button {
-   text-align: center;
-   padding-top: 20px;
-}
-
-.btn{
-    border: 1px solid wheat;
-    padding: 10px 30px;
-    color: white;
+.hero a{
     text-decoration: none;
-    margin-right: 5px;
-    font-size: 13px;
-    text-transform: uppercase;
+    color: white;
+    background-color: brown;
+    padding: 20px;
+    margin: 30px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
 }
 
-.btn-one{
-    font-family: "roboto", sans-serif
-}
-.btn-two{
-    font-family: "roboto",sans-serif;
-}
-
-.btn-two:hover{
-    background-color: wheat;
-}
-
-.section1 p{
+.intro h4{
     text-align: center;
-    font-family: "helvetica" sans-serif;
+    font-style: italic;
+    padding: 50px;
+    background-color: whitesmoke
+}
+
+.intro h2{
+    text-align: center;
+    padding: 0 50px 50px 50px;
+    background-color: whitesmoke;
+}
+
+.intro p{
+    text-align: center;
+    padding:  50px 50px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-family: 'Roboto',;
+    background-color: whitesmoke;
+    height: 300px;
+    font-family: 'Roboto',;
+    font-size: 19px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    justify-content: flex-start;
+    flex-wrap: no-wrap;
+    background-color: black;
+    color: whitesmoke;
+
+}
+.container img{
+    float: left;
+    height: 750px;
+    padding: 0 25px 0 0;
+}
+
+.history h4{
     font-size: 20px;
-    color: wheat;
-    padding: 50px 50px;
+    padding: 90px 0 0 ;
+    letter-spacing: 2px;
+}
+
+.history h2{
+    letter-spacing: 2px;
+    padding: 10px;
+    font-size: 35px
+}
+
+.history p{
     letter-spacing: 1px;
     line-height: 30px;
+    padding: 10px;
+    font-size: 19.5px;
+    font-family: 'Roboto',;
+    color: whitesmoke;
 }
 
-.section2 p{
+.features{
     text-align: center;
-    font-family: 'helvetica' sans-serif;
-    font-size: 20px;
-    color: wheat;
-    padding: 50px 50px;
+    line-height: 30px;
     letter-spacing: 1px;
-    
-
+    padding: 40px 0 0 0;
 }
+
+.features h4{
+    text-align: center;
+    font-style: italic;
+    padding: 50px 0 40px;
+    font-size: 20px;
+}
+
+.features h2{
+    text-align: center;
+    padding-bottom:15px;
+}
+
+.features p{
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1px;
+    padding: 0px 0px;
+    line-height: 60px;
+}
+
